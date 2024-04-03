@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <script defer src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navSuperior">
+            <button class="home"  onclick="Home()">home</button>
+            <div class="dropdown">
+                <button class="atividade " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  atividades
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item " href="./atividades/Portfolio2022.pdf">fodase</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="atividade " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  extra
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item " href="./atividades/Portfolio2022.pdf">fodase</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            <button class="rotina" onclick="Rotinas()">rotinas</button>
+        </div>
+    </header>
+    <main>
+        
+        <div class="euI">
+            <div class="euIm">
+                <h1 class="carta">
+                    Carta de Apresentação
+                </h1>
+                <h3 class="primeiroP">
+
+                    Oi meu nome é Rafael dos Santos Schmidt, tenho 17 anos, nasci em Porto Alegre(RS).
+                    Porém, moro em Florianópolis há 11 anos. Sou estudante do terceiro ano do curso
+                    técnico de desenvolvimento de sistemas do colégio Sesi Senai. Cujo, eu optei em
+                    estudar, pois queria me formar e começar a trabalhar bem cedo, deixando a faculdade
+                    para planos futuros. No entanto, digamos que acabei repensando algumas coisas, e
+                    durante o meu segundo ano percebi que eu quero trabalhar com design. Entretanto,
+                    isso não tira o fato que eu gosto de programar. Me sinto realizado quando vejo meu
+                    código funcionando, só que não é algo que eu gostaria de trabalhar para vida toda,
+                    mas ter como hobby tá ótimo.
+                </h3>
+                <h3 class="segundoP">
+
+                    Falando um pouco mais sobre mim, eu sou muito comprometido e criativo com os trabalhos
+                    que gosto de fazer, sempre tento me esforçar ao máximo para que se tornem bons, desempenhando
+                    o papel pelo qual os criei. No entanto, não é toda tarefa que vai me envolver, mas sempre as
+                    concluo como planejado. Também costumo organizar minhas atividades em planilhas para não acabar
+                    esquecendo. Comecei a fazer essa prática nesse ano para me preparar para o ENEM e para os
+                    vestibulares.
+                    Ainda assim, com o término dessas provas, continuarei a ajustar o meu horário.
+                </h3>
+                <h3 class="terceiroP">
+
+                    Continuando, eu tenho três gatos, sendo eles: a Vega, o Gema e o Xiboca. Também tenho uma dog
+                    que se chama Bela. Eu amo muito os quatro, mas o Xiboca é meu nenê, então mimo ele um pouco
+                    mais. Sou fascinado por mídia digital, só que entre filmes, séries, animes/animações, música e
+                    vídeos, eu prefiro jogos. Eles construíram toda minha infância e juventude e ainda estão fazendo
+                    isso.
+                    Gosto de ler, porém não tenho um estilo favorito. Também pratico academia umas 4 vezes por semana
+                    para gastar um
+                    pouco de energia. E por fim, eu adoro desenvolver projetos pessoais onde somente eu e alguns amigos
+                    produzimos para consumo próprio. Meu objetivo um dia é publicá-los, mas no momento,
+                    tenho que aperfeiçoá-los. É isso, muito obrigado por lerem.
+                </h3>
+            </div>
+            <div class="euImg-div">
+                <button class="euImg"></button>
+                <div>
+                    <h1 class="contatos">Contatos</h1>
+                </div>
+                <div>
+                    <button class="insta" onclick="Insta()"></button>
+                    <button class="linkedin" onclick="Linkedin()"></button>
+                    <button class="github" onclick="Github()"></button>
+                </div>
+            </div>
+        </div>
+        <div class="navInferior">
+            <div class="euF">
+
+                <h1 class="portfolios">Portfólio 2023</h1>
+                <div>
+                    <a href="./atividades/Portfolio2023.pdf"><button class="portfolioV">View</button></a>&nbsp;
+                    <a href="./atividades/Portfolio2023.pdf" download="Portfólio_2023"><button class="portfolioD">Download</button></a>
+                </div>
+            </div>
+
+            <div class="euF">
+                <h1 class="portfolios">Currículo</h1>
+                <div>
+                    <a href=""><button class="portfolioV">View</button></a>&nbsp;
+                    <a href="" download="Currículo"><button class="portfolioD">Download</button></a>
+                </div>
+            </div>
+
+            <div class="euF">
+                <h1 class="portfolios">Portfólio 2022</h1>
+                <div>
+                    <a href="./atividades/Portfolio2022.pdf"><button class="portfolioV">View</button></a>&nbsp;
+                    <a href="./atividades/Portfolio2022.pdf" download="Portfólio_2022"><button class="portfolioD">Download</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+
+</html>
