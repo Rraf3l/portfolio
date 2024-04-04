@@ -115,8 +115,18 @@ body{
     transform: scale(1.5);
 }
 
-
-
+.dropdown-menu{
+    background-color: #273859;
+    color:aliceblue;
+    width: 180px;
+    font-family: "Space Mono";
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 0%;
+    margin: 0%;
+}
 
 /*botões de cima*/ 
 .home{
