@@ -44,48 +44,68 @@ body{
     min-height: 100vh;
     max-height: 100%;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
 
 
 /*fundo dos botões de Cima*/
-.navSuperior{
-    background-color:#010326; 
-    border: none; 
-    border-bottom: solid #273859 2px;
+.navSuperior {
+    background-color: #3F170F;
+    border: none;
+    border-bottom: solid #F2AC57 2px;
     display: flex;
     margin: 0;
+}
+/*fundo dos botões de Cima*/
+.navMeio{
+    display: flex;
+    margin: 0 20px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
 /*troca de cor dos botões de cima*/
-.home:hover{
-    background-color: #273859;
-    color: #010326;
+.home:hover {
+    background-color: #F2AC57;
+    color: #3F170F;
 }
-.atividade:hover{
-    background-color: #273859;
-    color: #010326;
+
+.atividade:hover {
+    background-color: #F2AC57;
+    color: #3F170F;
 }
-.rotina:hover{
-    background-color: #273859;
-    color: #010326;
+
+.rotina:hover {
+    background-color: #F2AC57;
+    color: #3F170F;
 }
-.extra:hover{
-    background-color: #273859;
-    color: #010326;
+
+.extra:hover {
+    background-color: #F2AC57;
+    color: #3F170F;
+}
+.dropdown-item:hover{
+    background-color: #F2D399;
+}
+/*troca de cor dos botões do meio*/
+.botaoT:hover{
+    background-color: #F2AC57;
+    color: #3F170F;
+    filter: drop-shadow(-5px -5px 10 #F2AC57);
+    transform: scale(2);
 }
 
 
 
-
-.dropdown-menu{
-    background-color: #273859;
-    color:aliceblue;
+.dropdown-menu {
+    background-color: #F2AC57;
     width: 180px;
     font-family: "Space Mono";
     font-weight: bold;
@@ -95,12 +115,20 @@ body{
     border-radius: 0%;
     margin: 0%;
 }
+.dropdown-item {
+    color: #3F170F;
+    font-family: "Space Mono";
+    font-weight: bold;
+}
 
-/*botões de cima*/ 
-.home{
-    background-color: #010326;
+
+
+
+/*botões de cima*/
+.home {
+    background-color: #3F170F;
     border: none;
-    color:aliceblue;
+    color: #F2AC57;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
@@ -110,10 +138,10 @@ body{
     text-align: center;
     transition: 1s;
 }
-.atividade{
-    background-color: #010326;
+.atividade {
+    background-color: #3F170F;
     border: none;
-    color:aliceblue;
+    color: #F2AC57;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
@@ -123,10 +151,10 @@ body{
     text-align: center;
     transition: 1s;
 }
-.rotina{
-    background-color: #010326;
+.rotina {
+    background-color: #3F170F;
     border: none;
-    color:aliceblue;
+    color: #F2AC57;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
@@ -136,10 +164,10 @@ body{
     text-align: center;
     transition: 1s;
 }
-.extra{
-    background-color: #010326;
+.extra {
+    background-color: #3F170F;
     border: none;
-    color:aliceblue;
+    color: #F2AC57;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
@@ -149,4 +177,25 @@ body{
     text-align: center;
     transition: 1s;
     border-radius: 15px;
+}
+/*botões do meio*/
+.botaoT{
+    background-color: #3F170F;
+    color: #F2AC57;
+    font-size: 30px;
+    font-family: "Space Mono";
+    font-weight: bold;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-top: 300px;
+    cursor: pointer;
+    transition: 1s;
+    filter: drop-shadow(-5px -5px 10px #3F170F);
+}
+main{
+    width: 100%;
 }
