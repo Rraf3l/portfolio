@@ -1,3 +1,18 @@
+let botao = true
+let atividade = document.getElementById("dropdownMenuButton1")
+function Atividade(){
+    if (botao == true){
+        atividade.style.transition = "background-color 1s";
+        atividade.style.backgroundColor = "#273859";
+        botao = false
+    }
+    else{
+        atividade.style.transition = "background-color 1s";
+        atividade.style.backgroundColor = "#010326";
+        botao = true
+    }
+}
+
 function Insta(){
     window.open("https://www.instagram.com/raf.schmidt/");
 }
