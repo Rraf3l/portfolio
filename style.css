@@ -87,6 +87,10 @@ body{
     background-color: #273859;
     color: #010326;
 }
+.tecnico:hover{
+    background-color: #273859;
+    color: #010326;
+}
 .rotina:hover{
     background-color: #273859;
     color: #010326;
@@ -145,6 +149,19 @@ body{
     transition: 1s;
 }
 .atividade{
+    background-color: #010326;
+    border: none;
+    color:aliceblue;
+    cursor: pointer;
+    font-family: "Space Mono";
+    font-weight: bold;
+    height: 60px;
+    width: 180px;
+    font-size: 20px;
+    text-align: center;
+    transition: 1s;
+}
+.tecnico{
     background-color: #010326;
     border: none;
     color:aliceblue;
