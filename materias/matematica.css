@@ -80,17 +80,18 @@ body {
     background-color: #F2AC57;
     color: #3F170F;
 }
-
 .atividade:hover {
     background-color: #F2AC57;
     color: #3F170F;
 }
-
+.tecnico:hover{
+    background-color: #F2AC57;
+    color: #3F170F;
+}
 .rotina:hover {
     background-color: #F2AC57;
     color: #3F170F;
 }
-
 .extra:hover {
     background-color: #F2AC57;
     color: #3F170F;
@@ -146,6 +147,19 @@ body {
     background-color: #3F170F;
     border: none;
     color: #F2AC57;
+    cursor: pointer;
+    font-family: "Space Mono";
+    font-weight: bold;
+    height: 60px;
+    width: 180px;
+    font-size: 20px;
+    text-align: center;
+    transition: 1s;
+}
+.tecnico{
+    background-color: #3F170F;
+    border: none;
+    color:#F2AC57;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
