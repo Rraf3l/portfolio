@@ -146,7 +146,8 @@ body{
     width: 114px;
     font-size: 20px;
     text-align: center;
-    transition: 1s;
+    transition: 0.5s;
+
 }
 .atividade{
     background-color: #010326;
@@ -159,7 +160,8 @@ body{
     width: 180px;
     font-size: 20px;
     text-align: center;
-    transition: 1s;
+    transition: 0.5s;
+
 }
 .tecnico{
     background-color: #010326;
@@ -172,7 +174,7 @@ body{
     width: 180px;
     font-size: 20px;
     text-align: center;
-    transition: 1s;
+    transition: 0.5s;
 }
 .rotina{
     background-color: #010326;
@@ -185,7 +187,7 @@ body{
     width: 130px;
     font-size: 20px;
     text-align: center;
-    transition: 1s;
+    transition: 0.5s;
 }
 .extra{
     background-color: #010326;
@@ -198,8 +200,20 @@ body{
     width: 120px;
     font-size: 20px;
     text-align: center;
-    transition: 1s;
+    transition: 0.5s;
+
     border-radius: 15px;
+}
+#dropdownMenuButton1 {
+    transition: color 0.5s, background-color 0.5s;
+    color: aliceblue;
+    background-color: #010326;
+}
+
+/* Estilo quando o botão está ativo */
+#dropdownMenuButton1.active {
+    color: #010326;
+    background-color: #273859;
 }
 /*botões de baixo*/
 .portfolioV{
@@ -213,7 +227,7 @@ body{
     width: 86px;
     font-size: 20px;
     text-align: center;
-    transition: 1s;
+    transition: 0.5s;
     border-radius: 30px;
 }
 .portfolioD{
@@ -227,7 +241,7 @@ body{
     width: 140px;
     font-size: 20px;
     text-align: center;
-    transition: 1s;
+    transition: 0.5s;
     border-radius: 30px;
 }
 /*botão de contatos sociais*/

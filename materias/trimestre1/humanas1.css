@@ -51,6 +51,21 @@ body{
 }
 
 
+
+
+/*troca de cor dos botões de cima*/
+.home:hover {
+    background-color: #D9B68B;
+    color: #261201;
+}
+.atividade:hover {
+    background-color: #D9B68B;
+    color: #261201;
+}
+
+
+
+
 /*fundo dos botões de Cima*/
 .navSuperior {
     background-color: #261201;
@@ -71,39 +86,6 @@ body{
 
 
 
-/*troca de cor dos botões de cima*/
-.home:hover {
-    background-color: #D9B68B;
-    color: #261201;
-}
-.atividade:hover {
-    background-color: #D9B68B;
-    color: #261201;
-}
-.tecnico:hover{
-    background-color: #D9B68B;
-    color: #261201;
-}
-.rotina:hover {
-    background-color: #D9B68B;
-    color: #261201;
-}
-.extra:hover {
-    background-color: #D9B68B;
-    color: #261201;
-}
-.dropdown-item:hover{
-    background-color: #8d6f4a;
-}
-/*troca de cor dos botões do meio*/
-.botaoT:hover{
-    background-color: #D9B68B;
-    color: #261201;
-    filter: drop-shadow(-5px -5px 10 #D9B68B);
-    transform: scale(2);
-}
-
-
 
 .dropdown-menu {
     background-color: #D9B68B;
@@ -121,6 +103,7 @@ body{
     font-family: "Space Mono";
     font-weight: bold;
 }
+
 
 
 
@@ -151,65 +134,4 @@ body{
     font-size: 20px;
     text-align: center;
     transition: 1s;
-}
-.tecnico{
-    background-color: #261201;
-    border: none;
-    color:#D9B68B;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 180px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
-}
-.rotina {
-    background-color: #261201;
-    border: none;
-    color: #D9B68B;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 130px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
-}
-.extra {
-    background-color: #261201;
-    border: none;
-    color: #D9B68B;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 120px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
-    border-radius: 15px;
-}
-/*botões do meio*/
-.botaoT{
-    background-color: #261201;
-    color: #D9B68B;
-    font-size: 30px;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 200px;
-    width: 200px;
-    margin: 100px;
-    border: none;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    margin-top: 300px;
-    cursor: pointer;
-    transition: 1s;
-    filter: drop-shadow(-5px -5px 10px #261201);
-}
-main{
-    width: 100%;
 }

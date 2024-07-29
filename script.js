@@ -1,21 +1,29 @@
-let botao = true
-let atividade = document.getElementById("dropdownMenuButton1")
-function Atividade(){
-    if (botao == true){
-        atividade.style.transition = "color 1s";
-        atividade.style.color = "#010326"
-        atividade.style.transition = "background-color 1s";
-        atividade.style.backgroundColor = "#273859";
-        botao = false
+document.addEventListener('DOMContentLoaded', (event) => {
+    let botao = false;
+    let atividade = document.getElementById("dropdownMenuButton1");
+
+    function Atividade() {
+        if (botao) {
+            atividade.classList.remove('active');
+            botao = false;
+        } else {
+            atividade.classList.add('active');
+            botao = true;
+        }
     }
-    else{
-        atividade.style.transition = "color 1s";
-        atividade.style.color = "aliceblue"
-        atividade.style.transition = "background-color 1s";
-        atividade.style.backgroundColor = "#010326";
-        botao = true
-    }
-}
+
+    atividade.addEventListener('click', Atividade);
+
+    document.addEventListener('click', function(event) {
+        if (!atividade.contains(event.target) && !document.querySelector('.dropdown-menu').contains(event.target)) {
+            if (botao) {
+                atividade.classList.remove('active');
+                botao = false;
+            }
+        }
+    });
+});
+
 
 function Insta(){
     window.open("https://www.instagram.com/raf.schmidt/");

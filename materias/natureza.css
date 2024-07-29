@@ -53,9 +53,9 @@ body{
 
 /*fundo dos botões de Cima*/
 .navSuperior {
-    background-color: #3F170F;
+    background-color: #024249;
     border: none;
-    border-bottom: solid #F2AC57 2px;
+    border-bottom: solid #F2EDD5 2px;
     display: flex;
     margin: 0;
 }
@@ -73,40 +73,40 @@ body{
 
 /*troca de cor dos botões de cima*/
 .home:hover {
-    background-color: #F2AC57;
-    color: #3F170F;
+    background-color: #F2EDD5;
+    color: #024249;
 }
 .atividade:hover {
-    background-color: #F2AC57;
-    color: #3F170F;
+    background-color: #F2EDD5;
+    color: #024249;
 }
 .tecnico:hover{
-    background-color: #273859;
-    color: #010326;
+    background-color: #F2EDD5;
+    color: #024249;
 }
 .rotina:hover {
-    background-color: #F2AC57;
-    color: #3F170F;
+    background-color: #F2EDD5;
+    color: #024249;
 }
 .extra:hover {
-    background-color: #F2AC57;
-    color: #3F170F;
+    background-color: #F2EDD5;
+    color: #024249;
 }
 .dropdown-item:hover{
-    background-color: #F2D399;
+    background-color: #2B8C8C;
 }
 /*troca de cor dos botões do meio*/
 .botaoT:hover{
-    background-color: #F2AC57;
-    color: #3F170F;
-    filter: drop-shadow(-5px -5px 10 #F2AC57);
+    background-color: #F2EDD5;
+    color: #024249;
+    filter: drop-shadow(-5px -5px 10 #F2EDD5);
     transform: scale(2);
 }
 
 
 
 .dropdown-menu {
-    background-color: #F2AC57;
+    background-color: #F2EDD5;
     width: 180px;
     font-family: "Space Mono";
     font-weight: bold;
@@ -117,7 +117,7 @@ body{
     margin: 0%;
 }
 .dropdown-item {
-    color: #3F170F;
+    color: #024249;
     font-family: "Space Mono";
     font-weight: bold;
 }
@@ -127,9 +127,9 @@ body{
 
 /*botões de cima*/
 .home {
-    background-color: #3F170F;
+    background-color: #024249;
     border: none;
-    color: #F2AC57;
+    color: #F2EDD5;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
@@ -140,9 +140,9 @@ body{
     transition: 1s;
 }
 .atividade {
-    background-color: #3F170F;
+    background-color: #024249;
     border: none;
-    color: #F2AC57;
+    color: #F2EDD5;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
@@ -153,9 +153,9 @@ body{
     transition: 1s;
 }
 .tecnico{
-    background-color: #010326;
+    background-color: #024249;
     border: none;
-    color:aliceblue;
+    color:#F2EDD5;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
@@ -166,9 +166,9 @@ body{
     transition: 1s;
 }
 .rotina {
-    background-color: #3F170F;
+    background-color: #024249;
     border: none;
-    color: #F2AC57;
+    color: #F2EDD5;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
@@ -179,9 +179,9 @@ body{
     transition: 1s;
 }
 .extra {
-    background-color: #3F170F;
+    background-color: #024249;
     border: none;
-    color: #F2AC57;
+    color: #F2EDD5;
     cursor: pointer;
     font-family: "Space Mono";
     font-weight: bold;
@@ -194,8 +194,8 @@ body{
 }
 /*botões do meio*/
 .botaoT{
-    background-color: #3F170F;
-    color: #F2AC57;
+    background-color: #024249;
+    color: #F2EDD5;
     font-size: 30px;
     font-family: "Space Mono";
     font-weight: bold;
@@ -208,7 +208,7 @@ body{
     margin-top: 300px;
     cursor: pointer;
     transition: 1s;
-    filter: drop-shadow(-5px -5px 10px #3F170F);
+    filter: drop-shadow(-5px -5px 10px #024249);
 }
 main{
     width: 100%;
