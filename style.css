@@ -1,38 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 
-/* Definições de fontes */
-.space-mono-regular {
-    font-family: "Space Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
-.space-mono-bold {
-    font-family: "Space Mono", monospace;
-    font-weight: 700;
-    font-style: normal;
-}
-.space-mono-regular-italic {
-    font-family: "Space Mono", monospace;
-    font-weight: 400;
-    font-style: italic;
-}
-.space-mono-bold-italic {
-    font-family: "Space Mono", monospace;
-    font-weight: 700;
-    font-style: italic;
-}
-.syncopate-regular {
-    font-family: "Syncopate", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.syncopate-bold {
-    font-family: "Syncopate", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 /* Configurações de fontes */
 .space-mono-regular {
     font-family: "Space Mono", monospace;
@@ -170,13 +138,14 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    text-align: center;
+    gap: 80px;
     background-color: #010326; 
     border: none; 
     border-top: solid #273859 2px;
     display: flex;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 /* Estilo dos botões de visualização e download */
@@ -193,6 +162,7 @@ body {
     text-align: center;
     transition: 0.5s;
     border-radius: 30px;
+    margin-bottom: 20px;
 }
 
 /* Efeito de hover nos botões de visualização e download */
@@ -238,6 +208,7 @@ body {
 /* Estilos dos blocos de texto */
 .carta, .primeiroP, .segundoP, .terceiroP, .contatos, .portfolios {
     color: rgb(248, 248, 248);
+
 }
 
 /* Estilo da carta de apresentação */
@@ -252,8 +223,9 @@ body {
 /* Estilo dos parágrafos no conteúdo principal */
 .primeiroP, .segundoP, .terceiroP {
     margin-left: 10px;
-    margin-right: 500px;
+    margin-right: 700px;
     padding: 25px;
+    text-align:justify;
 }
 
 /* Estilo específico para o primeiro parágrafo */
@@ -282,7 +254,14 @@ body {
 
 /* Estilo específico para contatos e portfolios */
 .contatos, .portfolios {
-    margin-top: 80px;
+    margin-top: 50px;
+}
+
+/* Estilo específico para fonte de portfolios */
+.portfolios{
+    font-family:"Syncopate", sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 
 /* Estilo do botão de contato */
