@@ -222,9 +222,8 @@ body {
 
 /* Estilo dos parágrafos no conteúdo principal */
 .primeiroP, .segundoP, .terceiroP {
-    margin-left: 10px;
+    margin-left: 32px;
     margin-right: 700px;
-    padding: 25px;
     text-align:justify;
 }
 
