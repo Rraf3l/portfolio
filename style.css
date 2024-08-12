@@ -39,7 +39,6 @@
 body {
     background-image: url("./images/fundodohome.jpg");
     background-size: cover;
-    backdrop-filter: blur(3px);
     background-repeat: no-repeat;
     min-height: 100vh;
     max-height: 100%;
@@ -66,7 +65,7 @@ body {
     border: none;
     color: aliceblue;
     cursor: pointer;
-    font-family: "Space Mono";
+    font-family: monospace;
     font-weight: bold;
     height: 60px;
     width: 180px;
@@ -154,7 +153,7 @@ body {
     border: none;
     color: aliceblue;
     cursor: pointer;
-    font-family: "Space Mono";
+    font-family: monospace;
     font-weight: bold;
     height: 60px;
     width: 120px;
@@ -205,6 +204,42 @@ body {
     margin-left: 40px;
 }
 
+/*Separação do layout*/
+.euI{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.euIm{
+    display: flex;
+    flex-direction:column;
+    width: 60%;
+}
+
+/* Posição da imagem */
+.euImg-div{
+    margin-right: 50px ;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo da minha foto*/
+.euImg{
+    background-color: #587abeee;
+    background-image: url("./images/rafael-removebg-preview.png");
+    background-size: cover;
+    border: none;
+    justify-content: center;
+    height: 450px;
+    width: 450px;
+    filter: drop-shadow(-5px -5px 10px #587abeee);
+    border-radius: 300px;
+}
+
 /* Estilos dos blocos de texto */
 .carta, .primeiroP, .segundoP, .terceiroP, .contatos, .portfolios {
     color: rgb(248, 248, 248);
@@ -222,14 +257,14 @@ body {
 
 /* Estilo dos parágrafos no conteúdo principal */
 .primeiroP, .segundoP, .terceiroP {
+    margin-top: 40px;
     margin-left: 32px;
-    margin-right: 700px;
+    margin-right: 58px;
     text-align:justify;
 }
 
 /* Estilo específico para o primeiro parágrafo */
 .primeiroP {
-    margin-top: 30px;
     font-family: "Space Mono", monospace;
     font-size: 16px;
     font-weight: 400;
@@ -237,7 +272,6 @@ body {
 
 /* Estilo específico para o segundo parágrafo */
 .segundoP {
-    margin-top: 20px;
     font-family: "Space Mono", monospace;
     font-size: 16px;
     font-weight: 400;
@@ -245,7 +279,6 @@ body {
 
 /* Estilo específico para o terceiro parágrafo */
 .terceiroP {
-    margin-top: 20px;
     font-family: "Space Mono", monospace;
     font-size: 16px;
     font-weight: 400;
@@ -264,15 +297,13 @@ body {
 }
 
 /* Estilo do botão de contato */
-.contato {
+.contatos {
     color: aliceblue;
-    font-family: "Space Mono", monospace;
+    text-align: center;
+    font-family: "Syncopate";
     font-weight: 700;
-    font-size: 22px;
-    background-color: #010326;
-    border: none;
-    border-radius: 25px;
-    width: 150px;
+    font-size: 35px;
+    width: 400px;
     height: 40px;
     cursor: pointer;
 }
