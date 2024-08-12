@@ -16,11 +16,11 @@
         <!-- Barra de navegação superior -->
         <div class="navSuperior">
             <!-- Botão Home -->
-            <button class="home" onclick="Home()">home</button>
+            <button class="home" onclick="Youtube()">home</button>
 
             <!-- Menu suspenso para atividades -->
             <div class="dropdown">
-                <button class="atividade" onclick="toggleDropdown(event, 'dropdown1')">atividades</button>
+                <button id="colorToggleButton" class="atividade" onclick="toggleDropdown(event, 'dropdown1')">atividades</button>
                 <div id="dropdown1" class="dropdown-content">
                     <a href="./materias/humanas.html">Humanas</a>
                     <a href="./materias/linguagens.html">Linguagens</a>
@@ -31,7 +31,7 @@
 
             <!-- Menu suspenso para técnico -->
             <div class="dropdown">
-                <button class="tecnico" onclick="toggleDropdown(event, 'dropdown2')">técnico</button>
+                <button id="colorToggleButton2" class="tecnico" onclick="toggleDropdown(event, 'dropdown2')">técnico</button>
                 <div id="dropdown2" class="dropdown-content">
                     <a href="./tecnico/desenvolvimento.html">Desenvolvimento</a>
                     <a href="./tecnico/implantacao.html">Implantação</a>
@@ -41,7 +41,7 @@
 
             <!-- Menu suspenso para extras -->
             <div class="dropdown">
-                <button class="extra" onclick="toggleDropdown(event, 'dropdown3')">extra</button>
+                <button id="colorToggleButton3" class="extra" onclick="toggleDropdown(event, 'dropdown3')">extra</button>
                 <div id="dropdown3" class="dropdown-content">
                     <a href="./extras/PPE.html">PPE</a>
                     <a href="./">Certificados</a>
@@ -97,18 +97,19 @@
                 </h3>
             </div>
             <div class="euImg-div">
-                    <button class="euImg"></button>
+                    <button id="playButton" class="euImg"></button> <!-- Tocar musica -->
+                    <audio id="myAudio" src="./musica/1-05. Living Mice.mp3"></audio> <!-- Caminho para a Musica -->
                 <div>
                     <h1 class="contatos">Contatos</h1>
                 </div>
-                <div>
+                <div> <!-- Botões redes sociais -->
                     <button class="insta" onclick="Insta()"></button>
                     <button class="linkedin" onclick="Linkedin()"></button>
                     <button class="github" onclick="Github()"></button>
                 </div>
             </div>
         </div>
-        <div class="navInferior">
+        <div class="navInferior"><!-- Separador Inferior -->
             <div class="euF">
 
                 <h1 class="portfolios">Portfólio 2023</h1>

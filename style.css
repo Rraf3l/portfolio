@@ -59,6 +59,12 @@ body {
     margin: 0;
 }
 
+/* Cor do botão quando é clicado */
+.atividade.active, .tecnico.active, .extra.active {
+    background-color: #273859; /* Cor do botão ao ser clicado */
+    color: #010326;;
+}
+
 /* Estilo dos botões de navegação superior */
 .home, .atividade, .tecnico, .extra, .rotina {
     background-color: #010326;
@@ -144,7 +150,6 @@ body {
     border-top: solid #273859 2px;
     display: flex;
     margin: 0;
-    margin-top: 60px;
 }
 
 /* Estilo dos botões de visualização e download */
@@ -194,14 +199,17 @@ body {
 /* Estilo específico para cada botão de rede social */
 .insta {
     background-image: url(./images/insta.png);
+    margin-bottom: 40px;
 }
 .linkedin {
     background-image: url(./images/linkedin.png);
     margin-left: 40px;
+    margin-bottom: 40px;
 }
 .github {
     background-image: url(./images/github.png);
     margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 /*Separação do layout*/
@@ -209,12 +217,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 .euIm{
     display: flex;
     flex-direction:column;
     width: 60%;
+    background-color: #000111ce;
+    border-right: solid #273859 2px;
+    transform: translateX(-100%); /* Começa deslocado para a esquerda */
+    opacity: 0; /* Começa invisível */
+    animation: slideRight 3s forwards; /* Animação de deslizamento */
 }
 
 /* Posição da imagem */
@@ -238,6 +252,16 @@ body {
     width: 450px;
     filter: drop-shadow(-5px -5px 10px #587abeee);
     border-radius: 300px;
+    animation: moveVertical 4s infinite alternate;
+}
+/* Definição da animação de movimento vertical */
+@keyframes moveVertical {
+    0% {
+        transform: translateY(0); /* Começa na posição original */
+    }
+    100% {
+        transform: translateY(-40px); /* Move para baixo 300 pixels */
+    }
 }
 
 /* Estilos dos blocos de texto */
@@ -253,6 +277,9 @@ body {
     font-family: "Syncopate", sans-serif;
     font-size: 40px;
     font-weight: 700;
+    transform: translateX(-100%); /* Começa deslocado para a esquerda */
+    opacity: 0; /* Começa invisível */
+    animation: slideRight 3s forwards; /* Animação de deslizamento */
 }
 
 /* Estilo dos parágrafos no conteúdo principal */
@@ -261,6 +288,21 @@ body {
     margin-left: 32px;
     margin-right: 58px;
     text-align:justify;
+    transform: translateX(-100%); /* Começa deslocado para a esquerda */
+    opacity: 0; /* Começa invisível */
+    animation: slideRight 4s forwards; /* Animação de deslizamento */
+}
+
+/* Define a animação de deslizamento da esquerda para a direita */
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Estilo específico para o primeiro parágrafo */

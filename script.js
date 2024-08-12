@@ -29,6 +29,45 @@ document.addEventListener('click', function() {
     });
 });
 
+// Seleciona todos os botões
+const buttons = document.querySelectorAll('.atividade, .tecnico, .extra');
+
+// Adiciona o evento de clique a cada botão
+buttons.forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.stopPropagation(); // Impede a propagação do clique para o documento
+        
+        // Remove a classe 'active' de todos os botões
+        buttons.forEach(btn => btn.classList.remove('active'));
+        
+        // Adiciona a classe 'active' ao botão clicado
+        button.classList.add('active');
+    });
+});
+
+// Adiciona o evento de clique ao documento para resetar a cor de todos os botões
+document.addEventListener('click', function() {
+    // Remove a classe 'active' de todos os botões
+    buttons.forEach(button => button.classList.remove('active'));
+});
+
+// Obtém referências aos elementos HTML
+const playButton = document.getElementById('playButton');
+const myAudio = document.getElementById('myAudio');
+
+// Adiciona um ouvinte de evento ao botão
+playButton.addEventListener('click', () => {
+    // Verifica se o áudio está pausado
+    if (myAudio.paused) {
+        // Reproduz o áudio e altera o texto do botão para "Pausar Música"
+        myAudio.play();
+    } else {
+        // Pausa o áudio e altera o texto do botão para "Tocar Música"
+        myAudio.pause();
+    }
+});
+
+// link para redes sociais e demais
 function Insta(){
     window.open("https://www.instagram.com/raf.schmidt/");
 }
@@ -37,4 +76,7 @@ function Linkedin(){
 }
 function Github(){
     window.open("https://github.com/Rraf3l");
+}
+function Youtube(){
+    window.open("https://www.youtube.com/@QCDane");
 }
