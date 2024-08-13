@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <!-- Importando o Bootstrap CSS para estilos básicos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Importando o arquivo CSS personalizado -->
     <link rel="stylesheet" href="./style.css">
     <!-- Importando o arquivo JavaScript com o código personalizado -->
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <header>
         <!-- Barra de navegação superior -->
@@ -20,7 +23,8 @@
 
             <!-- Menu suspenso para atividades -->
             <div class="dropdown">
-                <button id="colorToggleButton" class="atividade" onclick="toggleDropdown(event, 'dropdown1')">atividades</button>
+                <button id="colorToggleButton" class="atividade"
+                    onclick="toggleDropdown(event, 'dropdown1')">atividades</button>
                 <div id="dropdown1" class="dropdown-content">
                     <a href="./materias/humanas.html">Humanas</a>
                     <a href="./materias/linguagens.html">Linguagens</a>
@@ -31,7 +35,8 @@
 
             <!-- Menu suspenso para técnico -->
             <div class="dropdown">
-                <button id="colorToggleButton2" class="tecnico" onclick="toggleDropdown(event, 'dropdown2')">técnico</button>
+                <button id="colorToggleButton2" class="tecnico"
+                    onclick="toggleDropdown(event, 'dropdown2')">técnico</button>
                 <div id="dropdown2" class="dropdown-content">
                     <a href="./tecnico/desenvolvimento.html">Desenvolvimento</a>
                     <a href="./tecnico/implantacao.html">Implantação</a>
@@ -41,14 +46,15 @@
 
             <!-- Menu suspenso para extras -->
             <div class="dropdown">
-                <button id="colorToggleButton3" class="extra" onclick="toggleDropdown(event, 'dropdown3')">extra</button>
+                <button id="colorToggleButton3" class="extra"
+                    onclick="toggleDropdown(event, 'dropdown3')">extra</button>
                 <div id="dropdown3" class="dropdown-content">
                     <a href="./extras/PPE.html">PPE</a>
                     <a href="./">Certificados</a>
                     <a href="#">Link Extra</a>
                 </div>
             </div>
-            
+
             <!-- Botão Rotinas -->
             <button class="rotina" onclick="Rotinas()">rotinas</button>
         </div>
@@ -97,8 +103,8 @@
                 </h3>
             </div>
             <div class="euImg-div">
-                    <button id="playButton" class="euImg"></button> <!-- Tocar musica -->
-                    <audio id="myAudio" src="./musica/1-05. Living Mice.mp3"></audio> <!-- Caminho para a Musica -->
+                <button id="playButton" class="euImg"></button> <!-- Tocar musica -->
+                <audio id="myAudio" src="./musica/1-05. Living Mice.mp3"></audio> <!-- Caminho para a Musica -->
                 <div>
                     <h1 class="contatos">Contatos</h1>
                 </div>
@@ -132,12 +138,12 @@
                 <h1 class="portfolios">Portfólio 2022</h1>
                 <div>
                     <a href="./curriculo_port/Portfolio2022.pdf"><button class="portfolioV">View</button></a>&nbsp;
-                    <a href="./curriculo_port/Portfolio2022.pdf" download="Portfólio_2022"><button class="portfolioD">Download</button></a>
+                    <a href="./curriculo_port/Portfolio2022.pdf" download="Portfólio_2022"><button
+                            class="portfolioD">Download</button></a>
                 </div>
             </div>
         </div>
     </main>
 
 </body>
-
 </html>

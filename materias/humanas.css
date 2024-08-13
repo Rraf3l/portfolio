@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+/* Configurações de fontes */
 .space-mono-regular {
     font-family: "Space Mono", monospace;
     font-weight: 400;
@@ -33,9 +35,7 @@
     font-style: normal;
 }
 
-
-
-
+/* Estilo de fundo da página */
 body{
     background-image: url("../images/faerunmap.jpg");
     background-size: cover;
@@ -45,13 +45,14 @@ body{
     max-height: 100%;
 }
 
+/* Zerando margens e preenchimentos */
 * {
     padding: 0;
     margin: 0;
 }
 
 
-/*fundo dos botões de Cima*/
+/* Estilo da barra de navegação superior */
 .navSuperior {
     background-color: #261201;
     border: none;
@@ -59,141 +60,111 @@ body{
     display: flex;
     margin: 0;
 }
-/*fundo dos botões de Cima*/
+
+/* Cor do botão quando é clicado */
+.atividade.active, .tecnico.active, .extra.active {
+    background-color: #D9B68B; /* Cor do botão ao ser clicado */
+    color: #261201;;
+}
+
+/* Estilo dos botões de navegação superior */
+.home, .atividade, .tecnico, .extra, .rotina {
+    background-color: #261201;
+    border: none;
+    color: #D9B68B;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+    height: 60px;
+    width: 180px;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/* Efeito de hover nos botões de navegação superior */
+.home:hover, .atividade:hover, .tecnico:hover, .rotina:hover, .extra:hover {
+    background-color: #D9B68B;
+    color: #261201;
+}
+
+/* Estilo do menu suspenso (dropdown) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo do conteúdo do menu suspenso, inicialmente escondido */
+.dropdown-content {
+    visibility: hidden; /* Inicialmente escondido */
+    opacity: 0; /* Inicialmente invisível */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Suaviza a transição */
+}
+
+/* Estilo dos links no menu suspenso */
+.dropdown-content a {
+    color: #261201;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #D9B68B;
+    width: 180px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Space Mono";
+    font-weight: bold;
+    border: none;
+    border-radius: 0%;
+    margin: 0%;
+}
+
+/* Efeito de hover nos links do menu suspenso */
+.dropdown-content a:hover {
+    background-color: #A6855D;
+    transition: 0.3s;
+}
+
+/* Mostrar o conteúdo do menu suspenso */
+.dropdown-content.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Classe para mostrar o menu suspenso */
+.show {
+    display: block !important;
+}
+
+/* Estilo do meio da página */
 .navMeio{
+    background-size: cover;
     display: flex;
-    margin: 0 20px;
+    margin-top: 200px;
     padding-bottom: 30px;
     justify-content: center;
     align-items: center;
 }
 
+/*Estilo das posições do botaoT2 e T3 */
+.div-botao2, .div-botao3{
+    margin-left: 100px;
+}
 
-
-
-/*troca de cor dos botões de cima*/
-.home:hover {
-    background-color: #D9B68B;
-    color: #261201;
-}
-.atividade:hover {
-    background-color: #D9B68B;
-    color: #261201;
-}
-.tecnico:hover{
-    background-color: #D9B68B;
-    color: #261201;
-}
-.rotina:hover {
-    background-color: #D9B68B;
-    color: #261201;
-}
-.extra:hover {
-    background-color: #D9B68B;
-    color: #261201;
-}
-.dropdown-item:hover{
-    background-color: #8d6f4a;
-}
 /*troca de cor dos botões do meio*/
-.botaoT:hover{
+.botaoT1:hover, .botaoT2:hover, .botaoT3:hover{
     background-color: #D9B68B;
     color: #261201;
     filter: drop-shadow(-5px -5px 10 #D9B68B);
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
-
-
-.dropdown-menu {
-    background-color: #D9B68B;
-    width: 180px;
-    font-family: "Space Mono";
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    border: none;
-    border-radius: 0%;
-    margin: 0%;
-}
-.dropdown-item {
-    color: #261201;
-    font-family: "Space Mono";
-    font-weight: bold;
-}
-
-
-
-
-/*botões de cima*/
-.home {
-    background-color: #261201;
-    border: none;
-    color: #D9B68B;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 114px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
-}
-.atividade {
-    background-color: #261201;
-    border: none;
-    color: #D9B68B;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 180px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
-}
-.tecnico{
-    background-color: #261201;
-    border: none;
-    color:#D9B68B;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 180px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
-}
-.rotina {
-    background-color: #261201;
-    border: none;
-    color: #D9B68B;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 130px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
-}
-.extra {
-    background-color: #261201;
-    border: none;
-    color: #D9B68B;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 120px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
-    border-radius: 15px;
-}
 /*botões do meio*/
-.botaoT{
+.botaoT1, .botaoT2, .botaoT3{
     background-color: #261201;
     color: #D9B68B;
     font-size: 30px;
@@ -201,15 +172,10 @@ body{
     font-weight: bold;
     height: 200px;
     width: 200px;
-    margin: 100px;
     border: none;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    margin-top: 300px;
     cursor: pointer;
     transition: 1s;
     filter: drop-shadow(-5px -5px 10px #261201);
-}
-main{
-    width: 100%;
 }
