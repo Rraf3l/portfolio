@@ -37,12 +37,34 @@
 
 /* Estilo de fundo da página */
 body{
-    background-image: url("");
+    background-image: url("../../images/faerunmap.jpg");
     background-size: cover;
     backdrop-filter: blur(4px);
     background-repeat: no-repeat;
     min-height: 100vh;
     max-height: 100%;
+}
+
+/* Estilo do meio da página */
+.trabalho1{
+    margin-top: 60px;
+    margin-left: 32px;
+    border: none;
+    transform: translateX(-100%); /* Começa deslocado para a esquerda */
+    opacity: 0; /* Começa invisível */
+    animation: slideRight 3s forwards; /* Animação de deslizamento */
+}
+
+/* Define a animação de deslizamento da esquerda para a direita */
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Zerando margens e preenchimentos */
@@ -138,4 +160,11 @@ body{
 /* Classe para mostrar o menu suspenso */
 .show {
     display: block !important;
+}
+
+/* Estilo do botão dos trabalhos Bandeira do Sudão */
+.bandeirasudao{
+    height: 150px;
+    width: 612px;
+    border: none;
 }
