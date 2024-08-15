@@ -47,6 +47,8 @@ body{
 
 /* Estilo do meio da página */
 .trabalho1{
+    display: flex;
+    flex-direction: row;
     margin-top: 60px;
     margin-left: 32px;
     border: none;
@@ -54,7 +56,6 @@ body{
     opacity: 0; /* Começa invisível */
     animation: slideRight 3s forwards; /* Animação de deslizamento */
 }
-
 /* Define a animação de deslizamento da esquerda para a direita */
 @keyframes slideRight {
     from {
@@ -65,6 +66,14 @@ body{
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.div-texto1{
+    margin-left: 40px;
+    margin-right: 300px;
+    display: flex;
+    flex-direction:column;
+    width: 60%;
 }
 
 /* Zerando margens e preenchimentos */
@@ -164,7 +173,8 @@ body{
 
 /* Estilo do botão dos trabalhos Bandeira do Sudão */
 .bandeirasudao{
-    height: 150px;
+    height: 344px;
     width: 612px;
     border: none;
 }
+
