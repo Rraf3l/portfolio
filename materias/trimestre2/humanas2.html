@@ -1,85 +1,138 @@
-<!-- Importando o Bootstrap CSS para estilos básicos -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!-- Importando o arquivo CSS personalizado -->
-<link rel="stylesheet" href="./humanas2.css">
+<!DOCTYPE html>
+<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2º Trimestre</title>
+    <!-- Importando o Bootstrap CSS para estilos básicos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Importando o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="./humanas2.css">
 </head>
 
 <body>
-<header>
-<!-- Barra de navegação superior -->
-<div class="navSuperior">
-    <!-- Botão Home -->
-    <a href="../../index.html"><button class="home">home</button></a>
+    <header>
+        <!-- Barra de navegação superior -->
+        <div class="navSuperior">
+            <!-- Botão Home -->
+            <a href="../../index.html"><button class="home">home</button></a>
 
-    <!-- Menu suspenso para atividades -->
-    <div class="dropdown">
-        <button id="colorToggleButton" class="atividade"
-            onclick="toggleDropdown(event, 'dropdown1')">trimestres</button>
-        <div id="dropdown1" class="dropdown-content">
-            <a href="../trimestre1/humanas1.html">1º Trimestre</a>
-            <a href="../trimestre3/humanas3.html">3º Trimestre</a>
-        </div>
-    </div>
-</header>
-<body>
-    
-</body>
-<script>
+            <!-- Menu suspenso para atividades -->
+            <div class="dropdown">
+                <button id="colorToggleButton" class="atividade"
+                    onclick="toggleDropdown(event, 'dropdown1')">trimestres</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="../trimestre1/humanas1.html">1º Trimestre</a>
+                    <a href="../trimestre3/humanas3.html">3º Trimestre</a>
+                </div>
+            </div>
+    </header>
 
-    /**
-   * Alterna a exibição do menu suspenso ao clicar no botão correspondente.
-   * @param {Event} event - O evento de clique no botão.
-   * @param {string} dropdownId - O ID do menu suspenso a ser alternado.
-   */
-    function toggleDropdown(event, dropdownId) {
-        event.stopPropagation(); // Impede que o clique no botão feche o menu se for clicado fora
+    <body>
+        <main>
+            <div class="trabalho1">
+                <a
+                    href="../../trabalho/trimestre2/An Another Day of News.pdf"><button
+                        class="jornal"></button></a>
 
-        // Fecha todos os menus suspensos, exceto o que foi clicado
-        const dropdowns = document.querySelectorAll('.dropdown-content');
-        dropdowns.forEach(dropdown => {
-            if (dropdown.id !== dropdownId) {
-                dropdown.classList.remove('show');
-            }
+                <div class="div-texto1">
+                    <h1 class="titulo1">capa de um jornal standard da época 1900-1920</h1>
+                    <div class="texto1">
+                        A proposta desse trabalho individual era desenvolver a capa de um jornal da época, seguindo o tamanho, estilo e padrão do começo do século XX. 
+                        A capa deveria conter uma notícia principal da época e outras menores, incluindo a editora, o jornalista, a data e a localidade específica. <br>
+                        Habilidades desenvolvidas: C2, H10, C6, H39.
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="trabalho2">
+                <a
+                    href="https://www.canva.com/design/DAGHHtt6B_I/teYoej-sf9jPFQbNPoPrjg/edit"><button
+                        class="invencible"></button></a>
+                <div class="div-texto2">
+                    <h1 class="titulo2">Totalitarismo em Invencível</h1>
+                    <div class="texto2">
+                        Esse trabalho em dupla, realizado por mim e meu colega Theo, exigia que elaborássemos uma breve apresentação sobre como o totalitarismo é apresentado 
+                        em algum filme ou série de nossa escolha. No caso, a série escolhida foi Invencível. <br>
+                        Habilidades desenvolvidas: C2, H10, C6, H39.
+                    </div>
+                </div>
+            </div>
+            <div class="trabalho3">
+                <a href="../../trabalho/trimestre2/VID-20240422-WA0028.mp4"><button class="videoRadio"></button></a>
+
+                <div class="div-texto3">
+                    <h1 class="titulo1">Vídeo Tecnologias da Grande Guerra Mundial</h1>
+                    <div class="texto1">
+                        O intuito desse trabalho em grupo (Davi e Rafael) era realizar uma pesquisa sobre uma tecnologia criada durante a Grande Guerra Mundial e, 
+                        após isso, produzir uma animação sobre ela, ressaltando como era utilizada e como passou a ser usada atualmente. <br>
+                        Habilidades desenvolvidas: C4, H21, H23.
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </body>
+
+    <script>
+
+        /**
+       * Alterna a exibição do menu suspenso ao clicar no botão correspondente.
+       * @param {Event} event - O evento de clique no botão.
+       * @param {string} dropdownId - O ID do menu suspenso a ser alternado.
+       */
+        function toggleDropdown(event, dropdownId) {
+            event.stopPropagation(); // Impede que o clique no botão feche o menu se for clicado fora
+
+            // Fecha todos os menus suspensos, exceto o que foi clicado
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                if (dropdown.id !== dropdownId) {
+                    dropdown.classList.remove('show');
+                }
+            });
+
+            // Alterna a visibilidade do menu suspenso clicado
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle('show');
+        }
+
+        // Fecha todos os menus suspensos ao clicar fora deles
+        document.addEventListener('click', function () {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            });
         });
 
-        // Alterna a visibilidade do menu suspenso clicado
-        const dropdown = document.getElementById(dropdownId);
-        dropdown.classList.toggle('show');
-    }
+        // Seleciona todos os botões
+        const buttons = document.querySelectorAll('.atividade, .tecnico, .extra, .botaoT');
 
-    // Fecha todos os menus suspensos ao clicar fora deles
-    document.addEventListener('click', function () {
-        const dropdowns = document.querySelectorAll('.dropdown-content');
-        dropdowns.forEach(dropdown => {
-            if (dropdown.classList.contains('show')) {
-                dropdown.classList.remove('show');
-            }
+        // Adiciona o evento de clique a cada botão
+        buttons.forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.stopPropagation(); // Impede a propagação do clique para o documento
+
+                // Remove a classe 'active' de todos os botões
+                buttons.forEach(btn => btn.classList.remove('active'));
+
+                // Adiciona a classe 'active' ao botão clicado
+                button.classList.add('active');
+            });
         });
-    });
 
-    // Seleciona todos os botões
-    const buttons = document.querySelectorAll('.atividade, .tecnico, .extra, .botaoT');
-
-    // Adiciona o evento de clique a cada botão
-    buttons.forEach(button => {
-        button.addEventListener('click', function (event) {
-            event.stopPropagation(); // Impede a propagação do clique para o documento
-
+        // Adiciona o evento de clique ao documento para resetar a cor de todos os botões
+        document.addEventListener('click', function () {
             // Remove a classe 'active' de todos os botões
-            buttons.forEach(btn => btn.classList.remove('active'));
-
-            // Adiciona a classe 'active' ao botão clicado
-            button.classList.add('active');
+            buttons.forEach(button => button.classList.remove('active'));
         });
-    });
 
-    // Adiciona o evento de clique ao documento para resetar a cor de todos os botões
-    document.addEventListener('click', function () {
-        // Remove a classe 'active' de todos os botões
-        buttons.forEach(button => button.classList.remove('active'));
-    });
-
-</script>
+    </script>
 
 </html>
