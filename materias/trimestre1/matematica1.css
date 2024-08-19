@@ -6,17 +6,20 @@
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
-} 
+}
+
 .space-mono-bold {
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
-} 
+}
+
 .space-mono-regular-italic {
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: italic;
-} 
+}
+
 .space-mono-bold-italic {
     font-family: "Space Mono", monospace;
     font-weight: 700;
@@ -28,21 +31,85 @@
     font-weight: 400;
     font-style: normal;
 }
-  
-  .syncopate-bold {
+
+.syncopate-bold {
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 /* Estilo de fundo da página */
-body{
-    background-image: url("../images/oppenheimer.jpg");
+body {
+    background-image: url("../../images/oppenheimer.jpg");
     background-size: cover;
     backdrop-filter: blur(4px);
     background-repeat: no-repeat;
     min-height: 100vh;
     max-height: 100%;
+}
+
+/* Estilo da posição e da animação do trabalho1 e do 3*/
+.trabalho1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    border: none;
+    transform: translateX(-100%);
+    /* Começa deslocado para a esquerda */
+    opacity: 0;
+    /* Começa invisível */
+    animation: slideRight 3s forwards;
+    /* Animação de deslizamento */
+}
+
+/* Define a animação de deslizamento da esquerda para a direita */
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo do Texto do botão 1 e do 3 */
+.div-texto1 {
+    margin-top: 72px;
+    margin-left: 90px;
+    margin-right: 220px;
+    height: 220px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: #3F170F;
+    border-left: solid #3F170F 4px;
+    background-color: #f2d399b4;
+}
+
+/* Estilo do Titulo dos trabalhos 1 e 3*/
+.titulo1{
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+/* Estilo do texto dos trabalhos */
+.texto1{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-family: "Space Mono", monospace;
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: bold;
 }
 
 /* Zerando margens e preenchimentos */
@@ -62,13 +129,15 @@ body{
 }
 
 /* Cor do botão quando é clicado */
-.atividade.active, .tecnico.active, .extra.active {
-    background-color: #F2AC57; /* Cor do botão ao ser clicado */
-    color: #3F170F;;
+.atividade.active {
+    background-color: #F2AC57;
+    /* Cor do botão ao ser clicado */
+    color: #3F170F;
+    ;
 }
 
 /* Estilo dos botões de navegação superior */
-.home, .atividade, .tecnico, .extra, .rotina {
+.home, .atividade {
     background-color: #3F170F;
     border: none;
     color: #F2AC57;
@@ -83,7 +152,8 @@ body{
 }
 
 /* Efeito de hover nos botões de navegação superior */
-.home:hover, .atividade:hover, .tecnico:hover, .rotina:hover, .extra:hover {
+.home:hover,
+.atividade:hover {
     background-color: #F2AC57;
     color: #3F170F;
 }
@@ -96,14 +166,17 @@ body{
 
 /* Estilo do conteúdo do menu suspenso, inicialmente escondido */
 .dropdown-content {
-    visibility: hidden; /* Inicialmente escondido */
-    opacity: 0; /* Inicialmente invisível */
+    visibility: hidden;
+    /* Inicialmente escondido */
+    opacity: 0;
+    /* Inicialmente invisível */
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Suaviza a transição */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* Suaviza a transição */
 }
 
 /* Estilo dos links no menu suspenso */
@@ -140,42 +213,19 @@ body{
     display: block !important;
 }
 
-/* Estilo do meio da página */
-.navMeio{
+/* Estilo do botão do trabalho Bandeira do Sudão */
+.trigonometria {
+    height: 350px;
+    width: 600px;
+    margin-left: 70px;
+    border: none;
+    border-radius: 200px;
+    background-image: url(../../trabalho/trimestre1/gigamath.jpg);
     background-size: cover;
-    display: flex;
-    margin-top: 200px;
-    padding-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Estilo das posições do botaoT2 e T3 */
-.div-botao2, .div-botao3{
-    margin-left: 100px;
+    transition: 1s;
 }
 
 /*troca de cor dos botões do meio*/
-.botaoT1:hover, .botaoT2:hover, .botaoT3:hover{
-    background-color: #F2AC57;
-    color: #3F170F;
-    filter: drop-shadow(-5px -5px 10 #F2AC57);
-    transform: scale(1.5);
-}
-
-/*botões do meio*/
-.botaoT1, .botaoT2, .botaoT3{
-    background-color: #3F170F;
-    color: #F2AC57;
-    font-size: 30px;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 200px;
-    width: 200px;
-    border: none;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    cursor: pointer;
-    transition: 1s;
-    filter: drop-shadow(-5px -5px 10px #3F170F);
+.trigonometria:hover {
+    transform: scale(1.15);
 }
