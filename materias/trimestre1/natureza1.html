@@ -5,32 +5,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1º Trimestre</title>
+    <!-- Importando o Bootstrap CSS para estilos básicos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Importando o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="./natureza1.css">
 </head>
 
 <body>
-    <main>
-        <div
-            style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-            <iframe loading="lazy"
-                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGBdxuc60M&#x2F;r-lDaIJKcC391JtQUN-Kiw&#x2F;view?embed"
-                allowfullscreen="allowfullscreen" allow="fullscreen"> </iframe></div><a
-            href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGBdxuc60M&#x2F;r-lDaIJKcC391JtQUN-Kiw&#x2F;view?utm_content=DAGBdxuc60M&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-            target="_blank" rel="noopener">Química orgânica</a><br>
-            Nesta atividade fizemos uma pesquisa para se aprofundar mais nos tópicos de química orgânica, foi divertido.<br><br>
-        <div>
-            <img src="../images2/meme baleia.png"><br>
-            Nesta atividade fizemos um meme sobre a evolução, foi uma atividade que trabalhou muito a criatividade.<br><br>
-        </div>
-        <div>
-            <a href="../images2/Trabalho_guerradascorrentes.pdf"><button><img src="../images2/guerradascorrentes.png"></button></a><br>
-            Nessa atividade tivemos que fazer um breve resumo sobre a guerra das correntes, uma disputa de ideia de Nicolas Tesla x Thomas Edison.<br><br>
-        </div>
-        <div>
-            <a href="https://docs.google.com/document/d/1RoWOLUU7jxNNB-_zHr9MbHNBAVRUxdU-baO0SXroVFo/edit?usp=sharing"><button><img src="../images2/relatoriopratica.png"></button></a><br>
-            Nesta atividade nós tinhamos que fazer um circuito elétrico usando pilhas, resistores, fios e leds, e após isso fazer um relatório, foi uma atividade divertida por ser diferente das aulas normais. <br><br>
-        </div>
-    </main>
-</body>
+    <header>
+        <!-- Barra de navegação superior -->
+        <div class="navSuperior">
+            <!-- Botão Home -->
+            <a href="../../index.html"><button class="home">home</button></a>
+
+            <!-- Menu suspenso para atividades -->
+            <div class="dropdown">
+                <button id="colorToggleButton" class="atividade"
+                    onclick="toggleDropdown(event, 'dropdown1')">trimestres</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="../trimestre2/natureza2.html">2º Trimestre</a>
+                    <a href="../trimestre3/natureza3.html">3º Trimestre</a>
+                </div>
+            </div>
+    </header>
+
+    <body>
+        <main>
+            <div class="trabalho1">
+                <a
+                    href="https://www.canva.com/design/DAGBdxuc60M/GmVjSfzQNGtB2D8OBRzZ3w/edit?utm_content=DAGBdxuc60M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><button
+                        class="quimicaor"></button></a>
+
+                <div class="div-texto1">
+                    <h1 class="titulo1">Química orgânica</h1>
+                    <div class="texto1">
+                        O objetivo deste trabalho em grupo (Theo, Rafael e Arthur) era produzir uma apresentação de revisão sobre química orgânica, além de criar um Kahoot com 
+                        perguntas e respostas sobre o tema.<br>
+                        Habilidades desenvolvidas: C1, H3, H4, H5.
+                    </div>
+                </div>
+            </div>
+            <div class="trabalho2">
+                <a
+                    href="../../trabalho/trimestre1/meme baleia.png"><button
+                        class="meme"></button></a>
+                <div class="div-texto2">
+                    <h1 class="titulo2">Meme de Genética</h1>
+                    <div class="texto2">
+                        Um trabalho individual que consistia na criação de um meme sobre evolucionismo.<br>
+                        Habilidades desenvolvidas: C2, H11.
+                    </div>
+                </div>
+            </div>
+            <div class="trabalho3">
+                <a href="../../trabalho/trimestre1/guerradascorrentes.png"><button class="correntes"></button></a>
+
+                <div class="div-texto3">
+                    <h1 class="titulo1">Guerra das correntes</h1>
+                    <div class="texto1">
+                        Neste trabalho em dupla (Rafael e Francisco), tínhamos que criar uma HQ sobre a Guerra das Correntes, que ocorreu entre Nikola Tesla e Thomas Edison. <br>
+                        Habilidades desenvolvidas: C2, H6.
+                    </div>
+                </div>
+            </div>
+            <div class="trabalho4">
+                <a href="https://docs.google.com/document/d/1RoWOLUU7jxNNB-_zHr9MbHNBAVRUxdU-baO0SXroVFo/edit"><button class="relatorio"></button></a>
+
+                <div class="div-texto4">
+                    <h1 class="titulo2">Relatório da prática de resistores</h1>
+                    <div class="texto2">
+                        O objetivo desta atividade prática em grupo (Arthur, Theo, Eduardo Borges, Pedro Luís e Rafael) é permitir que compreendam e experimentem as 
+                        diferenças entre circuitos de resistores em série e em paralelo, explorando como a resistência total é afetada em cada configuração. <br>
+                        Habilidades desenvolvidas: C2, C6, H6, H34.
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <script>
+
+        /**
+       * Alterna a exibição do menu suspenso ao clicar no botão correspondente.
+       * @param {Event} event - O evento de clique no botão.
+       * @param {string} dropdownId - O ID do menu suspenso a ser alternado.
+       */
+        function toggleDropdown(event, dropdownId) {
+            event.stopPropagation(); // Impede que o clique no botão feche o menu se for clicado fora
+
+            // Fecha todos os menus suspensos, exceto o que foi clicado
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                if (dropdown.id !== dropdownId) {
+                    dropdown.classList.remove('show');
+                }
+            });
+
+            // Alterna a visibilidade do menu suspenso clicado
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle('show');
+        }
+
+        // Fecha todos os menus suspensos ao clicar fora deles
+        document.addEventListener('click', function () {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            });
+        });
+
+        // Seleciona todos os botões
+        const buttons = document.querySelectorAll('.atividade, .tecnico, .extra, .botaoT');
+
+        // Adiciona o evento de clique a cada botão
+        buttons.forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.stopPropagation(); // Impede a propagação do clique para o documento
+
+                // Remove a classe 'active' de todos os botões
+                buttons.forEach(btn => btn.classList.remove('active'));
+
+                // Adiciona a classe 'active' ao botão clicado
+                button.classList.add('active');
+            });
+        });
+
+        // Adiciona o evento de clique ao documento para resetar a cor de todos os botões
+        document.addEventListener('click', function () {
+            // Remove a classe 'active' de todos os botões
+            buttons.forEach(button => button.classList.remove('active'));
+        });
+
+    </script>
 
 </html>
