@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º Trimestre</title>
+    <!-- Importando o Bootstrap CSS para estilos básicos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Importando o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="./natureza2.css">
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegação superior -->
+        <div class="navSuperior">
+            <!-- Botão Home -->
+            <a href="../../index.html"><button class="home">home</button></a>
+
+            <!-- Menu suspenso para atividades -->
+            <div class="dropdown">
+                <button id="colorToggleButton" class="atividade"
+                    onclick="toggleDropdown(event, 'dropdown1')">trimestres</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="../trimestre1/natureza1.html">1º Trimestre</a>
+                    <a href="../trimestre3/natureza3.html">3º Trimestre</a>
+                </div>
+            </div>
+    </header>
+
+    <body>
+        <main>
+            <div class="trabalho1">
+                <a
+                    href="https://www.canva.com/design/DAGGm5sY7oM/MtI7UGgDE5a1Ilw8Rc0wmQ/edit?utm_content=DAGGm5sY7oM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><button
+                        class="relacao"></button></a>
+
+                <div class="div-texto1">
+                    <h1 class="titulo1">Relações Ecológicas</h1>
+                    <div class="texto1">
+                        O objetivo deste trabalho em grupo (Rafael e Theo) era produzir uma apresentação sobre 10 relações ecológicas de um tipo escolhido pelo grupo. 
+                        A relação escolhida foi o parasitismo.<br>
+                        Habilidades desenvolvidas: C3, H15, H18.
+                    </div>
+                </div>
+            </div>
+            <div class="trabalho2">
+                <a
+                    href="https://www.canva.com/design/DAGFHZI_CA0/0HhwuynpudLQc3N2EvOuww/edit?utm_content=DAGFHZI_CA0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><button
+                        class="circuito"></button></a>
+                <div class="div-texto2">
+                    <h1 class="titulo2">Componentes dos circuitos</h1>
+                    <div class="texto2">
+                        Neste trabalho individual, o objetivo era fazer um mapa mental que incluísse todos os componentes de um circuito elétrico.<br>
+                        Habilidades desenvolvidas: C6, H35.
+                    </div>
+                </div>
+            </div>
+            <div class="trabalho3">
+                <a href="https://www.canva.com/design/DAGJ47SCDDc/nDOrksMgRcw3NDPw_Rzm8g/edit?utm_content=DAGJ47SCDDc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><button 
+                    class="plastico"></button></a>
+
+                <div class="div-texto3">
+                    <h1 class="titulo1">Descarte do plástico</h1>
+                    <div class="texto1">
+                        O objetivo deste trabalho em grupo (Rafael, Kauã e Davi) era produzir um cartaz, que seria exposto na escola, para conscientizar os estudantes e 
+                        profissionais a usarem os copos plásticos de forma consciente.<br>
+                        Habilidades desenvolvidas: C3, H15, H18.
+                    </div>
+                </div>
+            </div>
+            <div class="trabalho4">
+                <a href="https://www.canva.com/design/DAGHQsCOPAE/hZEiWhd7seQY2iruYJNvvg/edit?utm_content=DAGHQsCOPAE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><button 
+                    class="ibuprofeno"></button></a>
+
+                <div class="div-texto4">
+                    <h1 class="titulo2">Apresentação de um substância</h1>
+                    <div class="texto2">
+                        Neste trabalho em grupo (Rafael e Theo), tínhamos que produzir uma apresentação sobre uma substância. Foi-nos sorteado o ibuprofeno. <br>
+                        Habilidades desenvolvidas: C3, C4, H15, H18, H23.
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <script>
+
+        /**
+       * Alterna a exibição do menu suspenso ao clicar no botão correspondente.
+       * @param {Event} event - O evento de clique no botão.
+       * @param {string} dropdownId - O ID do menu suspenso a ser alternado.
+       */
+        function toggleDropdown(event, dropdownId) {
+            event.stopPropagation(); // Impede que o clique no botão feche o menu se for clicado fora
+
+            // Fecha todos os menus suspensos, exceto o que foi clicado
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                if (dropdown.id !== dropdownId) {
+                    dropdown.classList.remove('show');
+                }
+            });
+
+            // Alterna a visibilidade do menu suspenso clicado
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle('show');
+        }
+
+        // Fecha todos os menus suspensos ao clicar fora deles
+        document.addEventListener('click', function () {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            });
+        });
+
+        // Seleciona todos os botões
+        const buttons = document.querySelectorAll('.atividade, .tecnico, .extra, .botaoT');
+
+        // Adiciona o evento de clique a cada botão
+        buttons.forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.stopPropagation(); // Impede a propagação do clique para o documento
+
+                // Remove a classe 'active' de todos os botões
+                buttons.forEach(btn => btn.classList.remove('active'));
+
+                // Adiciona a classe 'active' ao botão clicado
+                button.classList.add('active');
+            });
+        });
+
+        // Adiciona o evento de clique ao documento para resetar a cor de todos os botões
+        document.addEventListener('click', function () {
+            // Remove a classe 'active' de todos os botões
+            buttons.forEach(button => button.classList.remove('active'));
+        });
+
+    </script>
+
+</html>
