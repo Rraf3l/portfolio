@@ -48,7 +48,7 @@ body {
     max-height: 100%;
 }
 
-/* Estilo da posição e da animação do trabalho1 e do 3*/
+/* Estilo da posição e da animação do trabalho 1 e do 3*/
 .trabalho1, .trabalho3 {
     display: flex;
     flex-direction: row;
@@ -154,7 +154,7 @@ body {
     margin-top: 15px;
 }
 
-/* Estilo do Titulo do trabalho 2 */
+/* Estilo do Titulo do trabalho 2 e 4*/
 .titulo2{
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
@@ -278,7 +278,7 @@ body {
     display: block !important;
 }
 
-
+/* Estilo do botão do trabalho química orgânica*/
 .quimicaor {
     height: 350px;
     width: 600px;
@@ -290,7 +290,7 @@ body {
     transition: 1s;
 }
 
-
+/* Estilo do botão do trabalho meme evolução*/
 .meme {
     height: 350px;
     width: 600px;
@@ -302,7 +302,7 @@ body {
     transition: 1s;
 }
 
-
+/* Estilo do botão do trabalho guerra das correntes */
 .correntes {
     height: 350px;
     width: 600px;
@@ -316,6 +316,7 @@ body {
     
 }
 
+/* Estilo do botão do trabalho relatório prático */
 .relatorio {
     height: 350px;
     width: 600px;
