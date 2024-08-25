@@ -48,7 +48,7 @@ body {
     max-height: 100%;
 }
 
-/* Estilo da posição e da animação do trabalho1 e do 3*/
+/* Estilo da posição e da animação do trabalho 1*/
 .trabalho1 {
     display: flex;
     flex-direction: row;
@@ -91,7 +91,7 @@ body {
 }
 
 
-/* Estilo do Texto do botão 2 */
+/* Estilo da posição e da animação do trabalho 1 */
 .trabalho2 {
     display: flex;
     flex-direction: row-reverse;
@@ -118,7 +118,7 @@ body {
     }
 }
 
-/* Estilo do Texto do botão 1 */
+/* Estilo do Texto do botão 2 */
 .div-texto2 {
     margin-top: 66px;
     margin-right: 90px;
@@ -268,7 +268,7 @@ body {
     display: block !important;
 }
 
-
+/* Estilo do botão do trabalho quebrando a banca */
 .quebrandofilme {
     height: 350px;
     width: 600px;
@@ -280,7 +280,7 @@ body {
     transition: 1s;
 }
 
-
+/* Estilo do botão do trabalho criminópolis*/
 .bancomobiliario {
     height: 350px;
     width: 600px;

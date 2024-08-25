@@ -154,7 +154,7 @@ body {
     margin-top: 15px;
 }
 
-/* Estilo do Titulo do trabalho 2 */
+/* Estilo do Titulo do trabalho 2 e 4*/
 .titulo2{
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
@@ -278,7 +278,7 @@ body {
     display: block !important;
 }
 
-
+/* Estilo do botão do trabalho relações orgânicas */
 .relacao {
     height: 350px;
     width: 600px;
@@ -290,7 +290,7 @@ body {
     transition: 1s;
 }
 
-
+/* Estilo do botão do trabalho circuito elétrico */
 .circuito {
     height: 350px;
     width: 600px;
@@ -302,7 +302,7 @@ body {
     transition: 1s;
 }
 
-
+/* Estilo do botão do trabalho copo plástico */
 .plastico {
     height: 350px;
     width: 600px;
@@ -316,6 +316,7 @@ body {
     
 }
 
+/* Estilo do botão do trabalho ibuprofeno */
 .ibuprofeno {
     height: 350px;
     width: 600px;
