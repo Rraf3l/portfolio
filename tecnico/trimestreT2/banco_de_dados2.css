@@ -89,10 +89,10 @@ body {
     background-color: #ACD7F2a6;
 }
 .div-texto1{
-    height: 190px;
+    height: 160px;
 }
 .div-texto3{
-    height: 230px;
+    height: 160px;
 }
 
 /* Estilo da posição e da animação do trabalho 2 */
@@ -127,7 +127,7 @@ body {
     margin-top: 66px;
     margin-right: 90px;
     margin-left: 220px;
-    height: 290px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     text-align: right;

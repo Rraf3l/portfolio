@@ -80,7 +80,6 @@ body {
     margin-top: 72px;
     margin-left: 90px;
     margin-right: 220px;
-    height: 220px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -88,6 +87,12 @@ body {
     color: #262626;
     border-left: solid #262626 4px;
     background-color: #858585a6;
+}
+.div-texto1{
+    height: 160px;
+}
+.div-texto3{
+    height: 190px;
 }
 
 /* Estilo da posição e da animação do trabalho 2 */
@@ -122,7 +127,7 @@ body {
     margin-top: 66px;
     margin-right: 90px;
     margin-left: 220px;
-    height: 210px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     text-align: right;
