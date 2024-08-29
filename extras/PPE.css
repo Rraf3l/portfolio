@@ -206,3 +206,138 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
+
+/* Estilo da posição e da animação do trabalho 1*/
+.trabalho1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    border: none;
+    transform: translateX(-100%);
+    /* Começa deslocado para a esquerda */
+    opacity: 0;
+    /* Começa invisível */
+    animation: slideRight 3s forwards;
+    /* Animação de deslizamento */
+}
+
+/* Define a animação de deslizamento da esquerda para a direita */
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo do Texto do botão 1*/
+.div-texto1 {
+    margin-top: 72px;
+    margin-left: 90px;
+    margin-right: 220px;
+    height: 220px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: #261201;
+    border-left: solid #261201 4px;
+    background-color: #a6855da6;
+}
+
+/* Estilo da posição e da animação do trabalho 2 */
+.trabalho2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 60px;
+    border: none;
+    transform: translateX(-100%);
+    /* Começa deslocado para a esquerda */
+    opacity: 0;
+    /* Começa invisível */
+    animation: slideLeft 3s forwards;
+    /* Animação de deslizamento */
+}
+
+/* Define a animação de deslizamento da esquerda para a direita */
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo do Texto do botão 2 */
+.div-texto2 {
+    margin-top: 66px;
+    margin-right: 90px;
+    margin-left: 220px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 60%;
+    color: #261201;
+    border-right: solid #261201 4px;
+    background-color: #a6855da6;
+}
+
+/* Estilo do Titulo dos trabalhos 1 e 3*/
+.titulo1{
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+/* Estilo do Titulo do trabalho 2 */
+.titulo2{
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    font-size: 30px;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+/* Estilo do texto dos trabalhos */
+.texto1, .texto2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-family: "Space Mono", monospace;
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+/* Estilo do botão do trabalho plano de gerenciamento */
+.plano {
+    height: 350px;
+    width: 600px;
+    margin-left: 70px;
+    border: none;
+    border-radius: 200px;
+    background-image: url(../trabalho/trabalhoppe/erro.png);
+    background-size: cover;
+    transition: 1s;
+}
+
+/*troca de cor dos botões do meio*/
+.plano:hover {
+    transform: scale(1.15);
+}
