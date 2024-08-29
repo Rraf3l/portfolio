@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+/* Configurações de fontes */
 .space-mono-regular {
     font-family: "Space Mono", monospace;
     font-weight: 400;
@@ -27,126 +29,180 @@
     font-style: normal;
 }
   
-  .syncopate-bold {
+.syncopate-bold {
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-
-
-
-body{
-    background-image: url("../images/interstellar.jpg");
+/* Estilo de fundo da página */
+body {
+    background-image: url("../images/ppe.jpg");
     background-size: cover;
-    backdrop-filter: blur(3px);
     background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
     min-height: 100vh;
     max-height: 100%;
 }
-*{
+
+/* Zerando margens e preenchimentos */
+* {
     padding: 0;
     margin: 0;
 }
 
-
-/*fundo dos botões de Cima*/
-.navSuperior{
-    background-color:#010326; 
+/* Estilo da barra de navegação superior */
+.navSuperior {
+    background-color: #401216; 
     border: none; 
-    border-bottom: solid #273859 2px;
+    border-bottom: solid #8C1C25 2px;
     display: flex;
     margin: 0;
 }
 
-
-
-
-/*troca de cor dos botões de cima*/
-.home:hover{
-    background-color: #273859;
-    color: #010326;
-}
-.atividade:hover{
-    background-color: #273859;
-    color: #010326;
-}
-.rotina:hover{
-    background-color: #273859;
-    color: #010326;
-}
-.extra:hover{
-    background-color: #273859;
-    color: #010326;
+/* Cor do botão quando é clicado */
+.atividade.active, .tecnico.active, .extra.active {
+    background-color: #8C1C25; /* Cor do botão ao ser clicado */
+    color: #401216;;
 }
 
-
-
-
-.dropdown-menu{
-    background-color: #273859;
-    color:aliceblue;
-    width: 180px;
-    font-family: "Space Mono";
+/* Estilo dos botões de navegação superior */
+.home, .atividade, .tecnico, .extra, .rotina {
+    background-color: #401216;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: monospace;
     font-weight: bold;
+    height: 60px;
+    width: 180px;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/* Efeito de hover nos botões de navegação superior */
+.home:hover, .atividade:hover, .tecnico:hover, .rotina:hover, .extra:hover {
+    background-color: #8C1C25;
+    color: #401216;
+}
+
+/* Estilo do menu suspenso (dropdown) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo do conteúdo do menu suspenso, inicialmente escondido */
+.dropdown-content {
+    visibility: hidden; /* Inicialmente escondido */
+    opacity: 0; /* Inicialmente invisível */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Suaviza a transição */
+}
+
+/* Estilo dos links no menu suspenso */
+.dropdown-content a {
+    color: aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #8C1C25;
+    width: 180px;
     cursor: pointer;
     text-align: center;
+    font-family: "Space Mono";
+    font-weight: bold;
     border: none;
     border-radius: 0%;
     margin: 0%;
 }
 
-/*botões de cima*/ 
-.home{
-    background-color: #010326;
-    border: none;
-    color:aliceblue;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 114px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
+/* Efeito de hover nos links do menu suspenso */
+.dropdown-content a:hover {
+    background-color: #401216;
+    transition: 0.3s;
 }
-.atividade{
-    background-color: #010326;
-    border: none;
-    color:aliceblue;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 180px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
+
+/* Mostrar o conteúdo do menu suspenso */
+.dropdown-content.show {
+    visibility: visible;
+    opacity: 1;
 }
-.rotina{
-    background-color: #010326;
-    border: none;
-    color:aliceblue;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 130px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
+
+/* Classe para mostrar o menu suspenso */
+.show {
+    display: block !important;
 }
-.extra{
-    background-color: #010326;
-    border: none;
-    color:aliceblue;
-    cursor: pointer;
-    font-family: "Space Mono";
-    font-weight: bold;
-    height: 60px;
-    width: 120px;
-    font-size: 20px;
-    text-align: center;
-    transition: 1s;
-    border-radius: 15px;
+
+
+/*Separação do layout*/
+.euI{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.euIm{
+    display: flex;
+    flex-direction:column;
+    background-color: #660d1444;
+    border-bottom: solid #8C1C25 2px;
+    transform: translateX(-100%); /* Começa deslocado para a esquerda */
+    opacity: 0; /* Começa invisível */
+    animation: slideRight 3s forwards; /* Animação de deslizamento */
+}
+
+/* Estilos dos blocos de texto */
+.carta, .primeiroP {
+    color: rgb(248, 248, 248);
+
+}
+
+/* Estilo da carta de apresentação */
+.carta {
+    margin-top: 60px;
+    margin-left: 32px;
+    font-family: "Syncopate", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    transform: translateX(-100%); /* Começa deslocado para a esquerda */
+    opacity: 0; /* Começa invisível */
+    animation: slideRight 3s forwards; /* Animação de deslizamento */
+}
+
+/* Estilo dos parágrafos no conteúdo principal */
+.primeiroP {
+    margin-top: 40px;
+    margin-left: 32px;
+    margin-right: 58px;
+    margin-bottom: 20px;
+    text-align:justify;
+    transform: translateX(-100%); /* Começa deslocado para a esquerda */
+    opacity: 0; /* Começa invisível */
+    animation: slideRight 4s forwards; /* Animação de deslizamento */
+}
+
+/* Define a animação de deslizamento da esquerda para a direita */
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo específico para o primeiro parágrafo */
+.primeiroP {
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+    font-weight: 400;
 }
