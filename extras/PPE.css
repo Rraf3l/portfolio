@@ -244,9 +244,9 @@ body {
     display: flex;
     flex-direction: column;
     width: 60%;
-    color: #261201;
-    border-left: solid #261201 4px;
-    background-color: #a6855da6;
+    color: aliceblue;
+    border-left: solid #8C1C25 4px;
+    background-color: #660d1444;
 }
 
 /* Estilo da posição e da animação do trabalho 2 */
@@ -281,17 +281,18 @@ body {
     margin-top: 66px;
     margin-right: 90px;
     margin-left: 220px;
-    height: 245px;
+    margin-bottom: 40px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     text-align: right;
     width: 60%;
-    color: #261201;
-    border-right: solid #261201 4px;
-    background-color: #a6855da6;
+    color: aliceblue;
+    border-right: solid #8C1C25 4px;
+    background-color: #660d1444;
 }
 
-/* Estilo do Titulo dos trabalhos 1 e 3*/
+/* Estilo do Titulo dos trabalhos 1*/
 .titulo1{
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
@@ -337,7 +338,19 @@ body {
     transition: 1s;
 }
 
+/* Estilo do botão do trabalho plano de gerenciamento */
+.mec {
+    height: 350px;
+    width: 600px;
+    margin-right: 70px;
+    border: none;
+    border-radius: 200px;
+    background-image: url(../trabalho/trabalhoppe/);
+    background-size: cover;
+    transition: 1s;
+}
+
 /*troca de cor dos botões do meio*/
-.plano:hover {
+.plano:hover, .mec:hover {
     transform: scale(1.15);
 }
