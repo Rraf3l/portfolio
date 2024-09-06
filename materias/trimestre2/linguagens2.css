@@ -89,10 +89,10 @@ body {
     background-color: rgba(172, 228, 116, 0.822);
 }
 .div-texto1{
-    height: 200px;
+    height: 190px;
 }
 .div-texto3{
-    height: 240px;
+    height: 165px;
 }
 
 /* stilo da posição e da animação do trabalho 2 */
@@ -127,7 +127,7 @@ body {
     margin-top: 66px;
     margin-right: 90px;
     margin-left: 220px;
-    height: 245px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -291,7 +291,7 @@ body {
     margin-right: 70px;
     border: none;
     border-radius: 200px;
-    background-image: url();
+    background-image: url(../../trabalho/trimestre2/maquete.jpg);
     background-size: cover;
     transition: 1s;
 }
@@ -304,7 +304,7 @@ body {
     margin-bottom: 70px;
     border: none;
     border-radius: 200px;
-    background-image: url();
+    background-image: url(../../trabalho/trimestre2/poema.jpg);
     background-size: cover;
     transition: 1s;
     
