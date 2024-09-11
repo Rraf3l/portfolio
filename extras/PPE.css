@@ -338,14 +338,14 @@ body {
     transition: 1s;
 }
 
-/* Estilo do botão do trabalho plano de gerenciamento */
+/* Estilo do botão do trabalho curso mec */
 .mec {
     height: 350px;
     width: 600px;
     margin-right: 70px;
     border: none;
     border-radius: 200px;
-    background-image: url(../trabalho/trabalhoppe/);
+    background-image: url(../trabalho/trabalhoppe/certificadoMECfoto.png);
     background-size: cover;
     transition: 1s;
 }
