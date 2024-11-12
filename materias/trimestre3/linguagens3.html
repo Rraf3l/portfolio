@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3º Trimestre</title>
+    <!-- Importando o Bootstrap CSS para estilos básicos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Importando o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="./linguagens3.css">
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegação superior -->
+        <div class="navSuperior">
+            <!-- Botão Home -->
+            <a href="../../index.html"><button class="home">home</button></a>
+
+            <!-- Menu suspenso para atividades -->
+            <div class="dropdown">
+                <button id="colorToggleButton" class="atividade"
+                    onclick="toggleDropdown(event, 'dropdown1')">trimestres</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="../trimestre1/linguagens1.html">1º Trimestre</a>
+                    <a href="../trimestre2/linguagens2.html">2º Trimestre</a>
+                </div>
+            </div>
+    </header>
+
+    <body>
+        <main>
+            <div class="trabalho1">
+                <a
+                    href="../../trabalho/trimestre3/readaçãmaalimentacao.png"><button
+                        class="vdm"></button></a>
+
+                <div class="div-texto1">
+                    <h1 class="titulo1">Redação Online</h1>
+                    <div class="texto1">
+                        Tive que produzir uma redação sobre as medidas para combater a má alimentação entre os jovens no Brasil no formato 
+                        ENEM (dissertativo-argumentativo).<br>
+                        Habilidades desenvolvidas: H.
+                    </div>
+                </div>
+            </div>
+            <div class="trabalho2">
+                <a
+                    href="https://www.canva.com/design/DAGRTne5Z4o/_w9gKudg5AYOrP8V2iLMkQ/edit?utm_content=DAGRTne5Z4o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><button
+                        class="o1917filme"></button></a>
+                <div class="div-texto2">
+                    <h1 class="titulo2">Análise do filme 1917</h1>
+                    <div class="texto2">
+                        Este trabalho foi proposto pelo professor. Assistimos ao filme 1917 no auditório, vencedor de vários Oscars e outras premiações. 
+                        Após o término do filme, deveríamos, individualmente, realizar uma análise e responder a algumas perguntas. <br>
+                        Habilidades desenvolvidas: C3, H15, H16.
+                    </div>
+                </div>
+            </div>
+            <div class="trabalho3">
+                <a href="../../trabalho/africadosul.pdf"><button class="colonizacaoafricadosul"></button></a>
+
+                <div class="div-texto3">
+                    <h1 class="titulo1">colonização da africa do sul</h1>
+                    <div class="texto1">
+                        O objetivo desse trabalho era fazer uma apresentação de imagens que narrassem a história de um país que passou pelo neocolonialismo. 
+                        O país escolhido foi a África do Sul, e o trabalho foi feito individualmente por mim. <br>
+                        Habilidades desenvolvidas: C6, H39.
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </body>
+
+    <script>
+
+        /**
+       * Alterna a exibição do menu suspenso ao clicar no botão correspondente.
+       * @param {Event} event - O evento de clique no botão.
+       * @param {string} dropdownId - O ID do menu suspenso a ser alternado.
+       */
+        function toggleDropdown(event, dropdownId) {
+            event.stopPropagation(); // Impede que o clique no botão feche o menu se for clicado fora
+
+            // Fecha todos os menus suspensos, exceto o que foi clicado
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                if (dropdown.id !== dropdownId) {
+                    dropdown.classList.remove('show');
+                }
+            });
+
+            // Alterna a visibilidade do menu suspenso clicado
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle('show');
+        }
+
+        // Fecha todos os menus suspensos ao clicar fora deles
+        document.addEventListener('click', function () {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            });
+        });
+
+        // Seleciona todos os botões
+        const buttons = document.querySelectorAll('.atividade, .tecnico, .extra, .botaoT');
+
+        // Adiciona o evento de clique a cada botão
+        buttons.forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.stopPropagation(); // Impede a propagação do clique para o documento
+
+                // Remove a classe 'active' de todos os botões
+                buttons.forEach(btn => btn.classList.remove('active'));
+
+                // Adiciona a classe 'active' ao botão clicado
+                button.classList.add('active');
+            });
+        });
+
+        // Adiciona o evento de clique ao documento para resetar a cor de todos os botões
+        document.addEventListener('click', function () {
+            // Remove a classe 'active' de todos os botões
+            buttons.forEach(button => button.classList.remove('active'));
+        });
+
+    </script>
+
+</html>
