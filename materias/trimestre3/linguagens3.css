@@ -127,7 +127,22 @@ body {
     margin-top: 66px;
     margin-right: 90px;
     margin-left: 220px;
-    height: 230px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 60%;
+    color: #395919;
+    border-right: solid #395919 4px;
+    background-color: rgba(172, 228, 116, 0.733);
+}
+
+/* Estilo do Texto do botão 2 */
+.div-texto4 {
+    margin-top: 140px;
+    margin-right: 90px;
+    margin-left: 800px;
+    height: 60px;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -291,7 +306,7 @@ body {
     margin-right: 70px;
     border: none;
     border-radius: 200px;
-    background-image: url(../../trabalho/trimestre1/bigbys.jpeg);
+    background-image: url(../../trabalho/trimestre3/cecilia.png);
     background-size: cover;
     transition: 1s;
 }
@@ -310,7 +325,20 @@ body {
     
 }
 
+/* Estilo do botão do trabalho bigyshand  */
+.bigyshand2 {
+    height: 350px;
+    width: 600px;
+    margin-right: 70px;
+    border: none;
+    border-radius: 200px;
+    background-image: url(../../trabalho/trimestre3/eufoto2.jpg);
+    background-size: cover;
+    transition: 1s;
+    align-items: center;
+}
+
 /*troca de cor dos botões do meio*/
-.vdm:hover, .bigyshand:hover, .revistaliteraria:hover{
+.vdm:hover, .bigyshand:hover, .revistaliteraria:hover, .bigyshand2:hover{
     transform: scale(1.15);
 }
