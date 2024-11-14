@@ -40,7 +40,7 @@
 
 /* Estilo de fundo da página */
 body {
-    background-image: url("../../images/lovecraft.jpg");
+    background-image: url("../../images/banco.jpg");
     background-size: cover;
     backdrop-filter: blur(4px);
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ body {
     max-height: 100%;
 }
 
-/* Estilo da posição e da animação do trabalho 1 e do 3*/
+/* Estilo da posição e da animação do trabalho 1 e 3*/
 .trabalho1, .trabalho3 {
     display: flex;
     flex-direction: row;
@@ -75,24 +75,24 @@ body {
     }
 }
 
-/* Estilo do Texto do botão 1 e do 3 */
+/* Estilo do Texto do botão 1 e 3*/
 .div-texto1, .div-texto3 {
     margin-top: 72px;
     margin-left: 90px;
-    margin-right: 210px;
+    margin-right: 220px;
     text-align: left;
     display: flex;
     flex-direction: column;
     width: 60%;
-    color: #395919;
-    border-left: solid #395919 4px;
-    background-color: rgba(172, 228, 116, 0.822);
+    color: #173F73;
+    border-left: solid #173F73 4px;
+    background-color: #ACD7F2a6;
 }
 .div-texto1{
-    height: 170px;
+    height: 160px;
 }
 .div-texto3{
-    height: 200px;
+    height: 160px;
 }
 
 /* Estilo da posição e da animação do trabalho 2 */
@@ -127,32 +127,17 @@ body {
     margin-top: 66px;
     margin-right: 90px;
     margin-left: 220px;
-    height: 180px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     text-align: right;
     width: 60%;
-    color: #395919;
-    border-right: solid #395919 4px;
-    background-color: rgba(172, 228, 116, 0.733);
+    color: #173F73;
+    border-right: solid #173F73 4px;
+    background-color: #ACD7F2a6;
 }
 
-/* Estilo do Texto do botão 2 */
-.div-texto4 {
-    margin-top: 140px;
-    margin-right: 90px;
-    margin-left: 800px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    width: 60%;
-    color: #395919;
-    border-right: solid #395919 4px;
-    background-color: rgba(172, 228, 116, 0.733);
-}
-
-/* Estilo do Titulo dos trabalhos 1 e 3*/
+/* Estilo do Titulo dos trabalhos 1*/
 .titulo1{
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
@@ -195,26 +180,26 @@ body {
 
 /* Estilo da barra de navegação superior */
 .navSuperior {
-    background-color: #395919;
+    background-color: #173F73;
     border: none;
-    border-bottom: solid #65A653 2px;
+    border-bottom: solid #7EA5D9 2px;
     display: flex;
     margin: 0;
 }
 
 /* Cor do botão quando é clicado */
 .atividade.active {
-    background-color: #65A653;
+    background-color: #7EA5D9;
     /* Cor do botão ao ser clicado */
-    color: #395919;
+    color: #173F73;
     ;
 }
 
 /* Estilo dos botões de navegação superior */
 .home, .atividade {
-    background-color: #395919;
+    background-color: #173F73;
     border: none;
-    color: #65A653;
+    color: #7EA5D9;
     cursor: pointer;
     font-family: monospace;
     font-weight: bold;
@@ -228,8 +213,8 @@ body {
 /* Efeito de hover nos botões de navegação superior */
 .home:hover,
 .atividade:hover {
-    background-color: #65A653;
-    color: #395919;
+    background-color: #7EA5D9;
+    color: #173F73;
 }
 
 /* Estilo do menu suspenso (dropdown) */
@@ -255,11 +240,11 @@ body {
 
 /* Estilo dos links no menu suspenso */
 .dropdown-content a {
-    color: #395919;
+    color: #173F73;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background-color: #65A653;
+    background-color: #7EA5D9;
     width: 180px;
     cursor: pointer;
     text-align: center;
@@ -272,7 +257,7 @@ body {
 
 /* Efeito de hover nos links do menu suspenso */
 .dropdown-content a:hover {
-    background-color: rgb(172, 228, 116);
+    background-color: #ACD7F2;
     transition: 0.3s;
 }
 
@@ -287,58 +272,31 @@ body {
     display: block !important;
 }
 
-/* Estilo do botão do trabalho vozes da morte  */
-.vdm {
+/* Estilo do botão do trabalho calculadora modelo lógico */
+.modelo {
     height: 350px;
     width: 600px;
     margin-left: 70px;
     border: none;
     border-radius: 200px;
-    background-image: url(../../trabalho/trimestre2/redacaoonline.jpg);
+    background-image: url(../../trabalho/trimestre3/bibliotecadigital.jpg);
     background-size: cover;
     transition: 1s;
 }
 
-/* Estilo do botão do trabalho bigyshand  */
-.bigyshand {
+/* Estilo do botão do trabalho consutório médico */
+.medico {
     height: 350px;
     width: 600px;
     margin-right: 70px;
     border: none;
     border-radius: 200px;
-    background-image: url(../../trabalho/trimestre3/cecilia.png);
+    background-image: url(../../trabalho/trimestre3/pgadmin.png);
     background-size: cover;
     transition: 1s;
-}
-
-/* Estilo do botão do trabalho resvista literária*/
-.revistaliteraria {
-    height: 350px;
-    width: 600px;
-    margin-left: 70px;
-    margin-bottom: 70px;
-    border: none;
-    border-radius: 200px;
-    background-image: url(../../trabalho/trimestre3/tropicalismo.png);
-    background-size: cover;
-    transition: 1s;
-    
-}
-
-/* Estilo do botão do trabalho bigyshand  */
-.bigyshand2 {
-    height: 350px;
-    width: 600px;
-    margin-right: 70px;
-    border: none;
-    border-radius: 200px;
-    background-image: url(../../trabalho/trimestre3/eufoto2.jpg);
-    background-size: cover;
-    transition: 1s;
-    align-items: center;
 }
 
 /*troca de cor dos botões do meio*/
-.vdm:hover, .bigyshand:hover, .revistaliteraria:hover, .bigyshand2:hover{
+.modelo:hover, .medico:hover {
     transform: scale(1.15);
 }
