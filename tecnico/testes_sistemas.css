@@ -37,9 +37,9 @@
 
 /* Estilo de fundo da página */
 body{
-    background-image: url("../images/desenvolvimento.png");
+    background-image: url("../images/wind.png");
     background-size: cover;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
     background-repeat: no-repeat;
     min-height: 100vh;
     max-height: 100%;
@@ -54,24 +54,24 @@ body{
 
 /* Estilo da barra de navegação superior */
 .navSuperior {
-    background-color: #262626;
+    background-color: #48aaff;
     border: none;
-    border-bottom: solid #CCCCCC 2px;
+    border-bottom: solid #16558C 2px;
     display: flex;
     margin: 0;
 }
 
 /* Cor do botão quando é clicado */
 .atividade.active, .tecnico.active, .extra.active {
-    background-color: #CCCCCC; /* Cor do botão ao ser clicado */
-    color: #262626;;
+    background-color: #16558C; /* Cor do botão ao ser clicado */
+    color: #48aaff;;
 }
 
 /* Estilo dos botões de navegação superior */
 .home, .atividade, .tecnico, .extra, .rotina {
-    background-color: #262626;
+    background-color: #48aaff;
     border: none;
-    color: #CCCCCC;
+    color: #16558C;
     cursor: pointer;
     font-family: monospace;
     font-weight: bold;
@@ -84,8 +84,8 @@ body{
 
 /* Efeito de hover nos botões de navegação superior */
 .home:hover, .atividade:hover, .tecnico:hover, .rotina:hover, .extra:hover {
-    background-color: #CCCCCC;
-    color: #262626;
+    background-color: #16558C;
+    color: #48aaff;
 }
 
 /* Estilo do menu suspenso (dropdown) */
@@ -108,11 +108,11 @@ body{
 
 /* Estilo dos links no menu suspenso */
 .dropdown-content a {
-    color: #262626;
+    color: #48aaff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background-color: #CCCCCC;
+    background-color: #16558C;
     width: 180px;
     cursor: pointer;
     text-align: center;
@@ -125,7 +125,7 @@ body{
 
 /* Efeito de hover nos links do menu suspenso */
 .dropdown-content a:hover {
-    background-color: #858585;
+    background-color: #003564;
     transition: 0.3s;
 }
 
@@ -157,16 +157,16 @@ body{
 
 /*troca de cor dos botões do meio*/
 .botaoT1:hover, .botaoT2:hover, .botaoT3:hover{
-    background-color: #CCCCCC;
-    color: #262626;
-    filter: drop-shadow(-5px -5px 10 #CCCCCC);
+    background-color: #16558C;
+    color: #48aaff;
+    filter: drop-shadow(-5px -5px 10 #16558C);
     transform: scale(1.5);
 }
 
 /*botões do meio*/
 .botaoT1, .botaoT2, .botaoT3{
-    background-color: #262626;
-    color: #CCCCCC;
+    background-color: #48aaff;
+    color: #16558C;
     font-size: 30px;
     font-family: "Space Mono";
     font-weight: bold;
@@ -177,5 +177,5 @@ body{
     border-bottom-right-radius: 25px;
     cursor: pointer;
     transition: 1s;
-    filter: drop-shadow(-5px -5px 10px #CCCCCC);
+    filter: drop-shadow(-5px -5px 10px #16558C);
 }
