@@ -313,6 +313,6 @@ body {
 }
 
 /*troca de cor dos botões do meio*/
-.quimicaor:hover, .circuito:hover, .plastico:hover {
+.relacao:hover, .circuito:hover, .plastico:hover {
     transform: scale(1.15);
 }
